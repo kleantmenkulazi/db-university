@@ -18,7 +18,7 @@ SELECT * FROM courses JOIN course_teacher ON courses.id = course_teacher.course_
 sono iscritti e il relativo dipartimento, in ordine alfabetico per cognome e
 nome
 
-
+SELECT students.*, degrees.name AS degree_name, departments.name AS departments_name FROM `students` JOIN degrees ON students.degree_id = degrees.id JOIN departments ON degrees.department_id = departments.id;
 
 5. Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
 
